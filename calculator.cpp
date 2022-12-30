@@ -63,6 +63,8 @@ Calculator::Calculator(QWidget *parent) :
             SLOT(UnaryPressed()));
     connect(ui->Reciprocal, SIGNAL(released()), this,
             SLOT(UnaryPressed()));
+    connect(ui->Percent, SIGNAL(released()), this,
+            SLOT(UnaryPressed()));
 
     // ********** Backspace ********** //
     connect(ui->BackSpace, SIGNAL(released()), this,
@@ -147,6 +149,12 @@ void Calculator::UnaryPressed() {
             return;
         }
         result = 1.0 / operand;
+    } else if (clickedOperator == tr("%")) {
+        if (operand == 0.0) {
+            abortOp();
+            return;
+        }
+        result = operand / 100;
     }
     ui->Display->setText(QString::number(result));
     waitingOp = true;
