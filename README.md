@@ -1,7 +1,8 @@
-# QT-c-Calculator
-QT &amp; c++ calculator
-Calculator with GUI by c++ using QT Creator
+## QT-c-Calculator
 
+#Calculator with GUI by c++ using QT Creator
+
+Environment
 * QT Creator 9.0.1
 * c++
 
