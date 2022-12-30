@@ -1,6 +1,6 @@
-## QT-c-Calculator
+## QT-C++-Calculator
 
-#Calculator with GUI by c++ using QT Creator
+# Calculator with GUI by c++ using QT Creator
 
 Environment
 * QT Creator 9.0.1
